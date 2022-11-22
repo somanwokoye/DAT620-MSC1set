@@ -1,0 +1,11 @@
+version: '3'
+services:
+  database:
+    container_name: postgres-datmsc1
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - C:/Users/SST-LAB2/data/postgres/ datmsc1:/data/postgres
+    env_file:
+      - datmsc1.env
